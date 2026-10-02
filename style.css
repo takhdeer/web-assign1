@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #171B26;
+    color: #ffff;
+    a {
+        color: #ffff;
+    }
+}
+
+#intro-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #272D3F;
+    color: #ffff;
+    height: 20rem;
+    button {
+        height: 2rem;
+        width: 6rem;
+        padding: 7px;
+        background-color: yellow;
+    }
+}
