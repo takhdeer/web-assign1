@@ -1,7 +1,9 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #171B26;
+    height: 4rem;
     color: #ffff;
     a {
         color: #ffff;
@@ -9,9 +11,9 @@ header {
 }
 
 #intro-card {
-    display: grid;
+    display: flex;
+    flex-direction: column;;
     justify-content: center;
-    align-items: center;
     background-color: #272D3F;
     color: #ffff;
     height: 20rem;
@@ -20,5 +22,12 @@ header {
         width: 6rem;
         padding: 7px;
         background-color: yellow;
+    }
+    .intro-item {
+        margin-top: 0;
+        margin-left: 14rem;
+        span {
+            display: block;
+        }
     }
 }
