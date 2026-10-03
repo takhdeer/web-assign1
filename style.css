@@ -23,11 +23,32 @@ header {
         padding: 7px;
         background-color: yellow;
     }
+    :hover {
+        cursor: pointer;
+    }
     .intro-item {
         margin-top: 0;
         margin-left: 14rem;
         span {
             display: block;
         }
+    }
+}
+
+.shop-items {
+    background-color: #F3F4F7;
+}
+
+#item-cards {
+    display: flex;
+    padding: 0.7rem;
+}
+
+.card {
+    button {
+        width: 100%;
+    }
+    :hover {
+        cursor: pointer;
     }
 }
