@@ -52,3 +52,19 @@ header {
         cursor: pointer;
     }
 }
+
+footer {
+    background-color: #171B26;
+    color: #ffff;
+}
+
+.footer-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    a {
+        color: #ffff;
+    }
+}
