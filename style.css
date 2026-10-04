@@ -10,6 +10,12 @@ header {
     }
 }
 
+body {
+    span {
+        display: block;
+    }
+}
+
 #intro-card {
     display: flex;
     flex-direction: column;;
