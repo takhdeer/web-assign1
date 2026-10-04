@@ -53,24 +53,15 @@ header {
     border-radius: 6px;
     height: 450px;
     width: 250px;
-    button {
-        width: 85%;
-        height: 40px;
-        margin: 0 auto;
-        font-weight: bold;
-        border: 1px solid;
-        border-radius: 0px;
-    }
-    button:hover {
-        cursor: pointer;
-        background-color: black;
-        color: #ffff;
-    }
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     img {
         padding-left: 0;
         width: 80%;
         height: auto;
         margin: 0 auto;
+        margin-top: 45px;
     }
     h4,p {
         margin-left: 1rem;
@@ -85,7 +76,30 @@ header {
 .card-content {
     display: flex;
     flex-direction: column;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
+    background-color: #ffff;
+    height: 35%;
+    button {
+        width: 85%;
+        height: 40px;
+        margin: 8px auto;
+        font-weight: bold;
+        border: 1px solid;
+        border-radius: 0px;
+        background-color: white;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: #ffff;
+    }
+    h4 {
+        margin-bottom: 4px;
+    }
+    p {
+        margin-top: 0px;
+        color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 footer {
