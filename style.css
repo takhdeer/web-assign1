@@ -34,7 +34,7 @@ body {
     }
     .intro-item {
         margin-top: 0;
-        margin-left: 14rem;
+        margin-left: 25rem;
         span {
             display: block;
         }
@@ -111,6 +111,9 @@ body {
 footer {
     background-color: #171B26;
     color: #ffff;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 2.5rem;
 }
 
 .footer-label {
@@ -119,7 +122,31 @@ footer {
 }
 
 .footer-nav {
-    a {
-        color: #ffff;
+    padding-right: 20rem;
+    ul {
+        list-style: none;
+        padding: 0;
     }
+    li {
+        padding-bottom: 10px;
+    }
+    a {
+        color: #8A8FA0;
+        text-decoration: none;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.footer-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#copyright {
+    color: grey;
+    font-size: 0.9rem;
 }
