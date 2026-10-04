@@ -23,7 +23,7 @@ header {
         padding: 7px;
         background-color: yellow;
     }
-    :hover {
+    button:hover {
         cursor: pointer;
     }
     .intro-item {
@@ -35,22 +35,57 @@ header {
     }
 }
 
-.shop-items {
+#shop-items {
     background-color: #F3F4F7;
+    width: 100%;
+    height: 34rem;
 }
 
 #item-cards {
     display: flex;
-    padding: 0.7rem;
+    justify-content: space-between;
+    padding: 0 4rem;
 }
 
 .card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3b7a64;
+    border-radius: 6px;
+    height: 450px;
+    width: 250px;
     button {
-        width: 100%;
+        width: 85%;
+        height: 40px;
+        margin: 0 auto;
+        font-weight: bold;
+        border: 1px solid;
+        border-radius: 0px;
     }
-    :hover {
+    button:hover {
         cursor: pointer;
+        background-color: black;
+        color: #ffff;
     }
+    img {
+        padding-left: 0;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    h4,p {
+        margin-left: 1rem;
+    }
+}
+
+.card:hover {
+    border: solid 1px;
+    border-top: 4px solid #D6A419;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
 }
 
 footer {
