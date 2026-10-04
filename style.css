@@ -7,6 +7,23 @@ header {
     color: #ffff;
     a {
         color: #ffff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    li {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+#header-nav {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 2.5rem;
+    a {
+        background-color: #34495E;
     }
 }
 
