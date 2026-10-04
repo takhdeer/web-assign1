@@ -167,3 +167,106 @@ footer {
     color: grey;
     font-size: 0.9rem;
 }
+
+/* about.html */
+
+#about-card {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    background-color: #272D3F;
+    color: #ffff;
+    height: 20rem;
+    .intro-item {
+        margin-top: 0;
+        margin-left: 25rem;
+        span {
+            display: block;
+        }
+    }
+}
+
+
+.story-card {
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #F3F4F7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    h2 {
+        flex: 1;
+        padding-left: 12rem;
+    }
+    p {
+        flex: 2;
+        margin: 0;
+        max-width: 30%;
+        padding-right: 6rem;
+        color: #63676A;
+    }
+}
+
+#value-section h3 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: grey;
+}
+
+#value-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.wide-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 350px;
+    padding: 20px;
+    background-color: #F3F4F7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+#team {
+    background-color: #F3F4F7;
+    h3 {
+        padding-top: 5rem;
+    }
+    #main-desc {
+        max-width: 30%;
+        padding-bottom: 2rem;
+    }
+}
+
+#team > * {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.team-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.photo-placeholder {
+    background-color: #ffff;
+    margin: 0 auto;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-card{
+    width: 400px;
+    #company-title {
+        color: darkgoldenrod;
+    }   
+}
