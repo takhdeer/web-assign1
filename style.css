@@ -262,6 +262,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .member-card{
@@ -269,4 +270,57 @@ footer {
     #company-title {
         color: darkgoldenrod;
     }   
+}
+
+#journey {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1rem;
+}
+
+#journey h3 {
+    text-align: center;
+    margin: 0 0 1.5rem;
+}
+
+#journey ol {
+    box-sizing: border-box;
+    position: relative;
+    width: 30rem;
+    max-width: 100%;
+    margin-left: 40rem; 
+    padding: 0 0 0 1.5rem;
+    list-style: none;
+    border-left: 1px solid #d5d8df;
+}
+
+#journey li {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+#journey li:last-child {
+    margin-bottom: 0;
+}
+
+#journey li::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: 0.2rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #d6a419;
+}
+
+.journey-date {
+    color: #3b7a64;
+    font-size: 1rem
+}
+
+#journey li p {
+    margin: 0.3rem 0 0;
+    color: #63676a;
+    font-size: 1rem
 }
