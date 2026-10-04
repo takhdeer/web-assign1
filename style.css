@@ -362,3 +362,52 @@ footer {
         margin: 12px;
     }
 }
+
+/* product.html */
+
+#product-body {
+    background-color: #F3F4F7;
+}
+
+#travel-link {
+    background-color: #ffff;
+}
+
+#product-section {
+    display: flex;
+    align-items: stretch;
+}
+
+#main-image {
+    height: 550px;
+}
+
+#Quantity-input {
+    display: block;
+    margin-top: 7px;
+}
+
+#product-desc {
+    max-width: 60ch;
+    margin-bottom: 25px;
+}
+
+.form-btn {
+    padding-top: 15px;
+}
+
+#product-info {
+    padding-left: 4rem;
+    #title {
+        max-width: 15ch;
+    }
+}
+
+#size-btns, #color-btns {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 5px;
+    }
+}
