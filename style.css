@@ -376,10 +376,22 @@ footer {
 #product-section {
     display: flex;
     align-items: stretch;
+    margin-left: 4rem;
 }
 
 #main-image {
-    height: 550px;
+    height: 650px;
+    width: 100%
+}
+
+#small-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    img {
+        height: 200px;
+        width: 100%
+    }
 }
 
 #Quantity-input {
@@ -409,5 +421,99 @@ footer {
         flex-direction: row;
         list-style: none;
         gap: 5px;
+        margin: 6px 0 12px;
+        padding: 0;
     }
+}
+
+#form > label {
+    display: block;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+#size-btns button {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    border: 1px solid #d5d8df;
+    background-color: #F3F4F7;
+    color: #343943;
+    font-size: 0.7rem;
+}
+
+#size-btns button:hover {
+    cursor: pointer;
+}
+
+
+#color-btns button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+#color-btns button:hover {
+    cursor: pointer;
+}
+
+#cream {
+    background-color: #eee8d9;
+}
+
+#black {
+    background-color: #343943;
+}
+
+#blue {
+    background-color: #14284a;
+}
+
+#red {
+    background-color: #c65c16;
+}
+
+#Quantity-input {
+    box-sizing: border-box;
+    width: 110px;
+    height: 30px;
+    padding: 3px 5px;
+    border: 1px solid #d5d8df;
+    background-color: #fff;
+    font-size: 0.7rem;
+}
+
+.form-btn {
+    display: flex;
+    gap: 11px;
+    padding-top: 15px;
+}
+
+.form-btn button {
+    height: 35px;
+    padding: 4px 10px;
+    border: 1px solid #171b26;
+    margin-top: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#add-to-cart {
+    border-color: #d6a419;
+    background-color: #d6a419;
+    color: #171b26;
+}
+
+#wishlist {
+    background-color: #fff;
+    color: #171b26;
+}
+
+.product-divider {
+    margin-top: 1.5rem;
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
