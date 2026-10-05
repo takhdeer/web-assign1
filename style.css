@@ -517,3 +517,53 @@ footer {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+#info-selector {
+    margin-left: 4rem;
+    padding-top: 1rem;
+    button {
+        margin: 0px;
+        border: 0px;
+        background-color: transparent;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+    }
+}
+
+#selected{
+    border-bottom: 1px solid gold;
+}
+
+#specs {
+    width: 100%;
+    max-width: 40rem;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: 0.75rem;
+}
+
+#specs th,
+#specs td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#specs th {
+    width: 30%;            
+    font-weight: normal;
+    color: #63676A;
+}
+
+#specs td {
+    color: #171B26;
+}
+
+#specs tr:last-child th,
+#specs tr:last-child td {
+    border-bottom: none;
+}
+
+#selectors {
+    margin-left: 4rem;
+}
