@@ -73,6 +73,7 @@ body {
     height: 27rem;
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
     h1 {
         font-family: serif;
     }
@@ -97,10 +98,14 @@ body {
         position: relative;
         span {
             display: block;
+            #assignment {
+                color: #81929C;
+            }
         }
     }
 }
 
+/*intial prompt used: add curly braces to the background of the header and align them to the left like this [Image #2] */
 .intro-background-braces {
     position: absolute;
     width: 101.5%;
@@ -129,10 +134,15 @@ body {
     background-color: #F3F4F7;
     width: 100%;
     height: 34rem;
+    padding-bottom: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 0;
     h2 {
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         padding-left: 4rem;
+        padding-bottom: 0.5rem;
+        font-weight: 500;
+        margin-top: 0;
     }
 }
 
@@ -163,7 +173,7 @@ body {
     }
 }
 
-.card:hover {
+#sweater {
     border: solid 1px;
     border-top: 4px solid #D6A419;
 }
@@ -174,6 +184,10 @@ body {
     margin-top: 3rem;
     background-color: #ffff;
     height: 35%;
+    a {
+        display: inline-flex;
+        text-decoration: none;
+    }
     button {
         width: 85%;
         height: 40px;
@@ -280,12 +294,22 @@ footer {
     background-color: #272D3F;
     color: #ffff;
     height: 20rem;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
     .intro-item {
         margin-top: 0;
         margin-left: 25rem;
         span {
             display: block;
         }
+    }
+    p {
+        color: #81929C;
+        font-size: 1.25rem;
     }
 }
 
@@ -299,6 +323,7 @@ footer {
     h2 {
         flex: 1;
         padding-left: 12rem;
+        font-family: Georgia, serif;
     }
     p {
         flex: 2;
@@ -306,6 +331,7 @@ footer {
         max-width: 30%;
         padding-right: 6rem;
         color: #63676A;
+        font-family: Georgia, serif;
     }
 }
 
@@ -314,40 +340,76 @@ footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
     color: grey;
+    font-family: Georgia, serif;
 }
 
 #value-cards {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
+    margin-left: 6rem;
 }
 
 .wide-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 250px;
     width: 350px;
     padding: 20px;
     background-color: #F3F4F7;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
+    font-family: Georgia, serif;
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #171B26;
+        color: #D6A419;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+    }
+    label {
+        font-family: Georgia, serif;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        font-family: Georgia, serif;
+        margin: 0;
+        line-height: 1.6;
+    }
 }
 
 #team {
     background-color: #F3F4F7;
+    padding-bottom: 25px;
     h3 {
         padding-top: 5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #171B26;
+        margin-bottom: 1rem;
+        font-family: Georgia, serif;
     }
     #main-desc {
-        max-width: 30%;
+        max-width: 50%;
         padding-bottom: 2rem;
+        color: #63676A;
+        font-size: 1rem;
+        line-height: 1.6;
+        font-family: Georgia, serif;
     }
 }
 
 #team > * {
-    margin-left: 10%;
+    margin-left: 6rem;
     margin-right: 10%;
 }
 
@@ -370,20 +432,31 @@ footer {
 
 .member-card{
     width: 400px;
+    font-family: Georgia, serif;
+    h4 {
+        font-family: Georgia, serif;
+    }
     #company-title {
         color: darkgoldenrod;
-    }   
+        font-family: Georgia, serif;
+    }
+    p {
+        font-family: Georgia, serif;
+    }
 }
 
+/*prompt use: change the font and style in the journey section to look like this [Image #1] dont change the size or the format just the style */
 #journey {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem 1rem;
+    font-family: Georgia, serif;
 }
 
 #journey h3 {
     text-align: center;
     margin: 0 0 1.5rem;
+    font-family: Georgia, serif;
 }
 
 #journey ol {
@@ -391,7 +464,7 @@ footer {
     position: relative;
     width: 30rem;
     max-width: 100%;
-    margin-left: 40rem; 
+    margin-left: 25rem;
     padding: 0 0 0 1.5rem;
     list-style: none;
     border-left: 1px solid #d5d8df;
@@ -419,23 +492,26 @@ footer {
 
 .journey-date {
     color: #3b7a64;
-    font-size: 1rem
+    font-size: 1rem;
+    font-family: Georgia, serif;
 }
 
 #journey li p {
     margin: 0.3rem 0 0;
     color: #63676a;
-    font-size: 1rem
+    font-size: 1rem;
+    font-family: Georgia, serif;
 }
 
 #contact {
     background-color: #F3F4F7;
     height: 250px;
     > * {
-        margin-left: 18rem;
+        margin-left: 6rem;
     }
     h3 {
         padding-top: 3rem;
+        font-family: Georgia, serif;
     }
 }
 
@@ -445,18 +521,21 @@ footer {
     gap: 20px;
 }
 
-.contact-card { 
+.contact-card {
     background-color: #ffff ;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     height: 120px;
     width: 340px;
+    font-family: Georgia, serif;
     h4{
         padding-top: 12px;
+        font-family: Georgia, serif;
     }
     h4,p,span {
         padding-left: 10px;
         width: 20ch;
+        font-family: Georgia, serif;
     }
     span {
         width: 45ch;
@@ -471,10 +550,6 @@ footer {
 #product-body {
     background-color: #F3F4F7;
     font-family: 'Inter', sans-serif;
-}
-
-#travel-link {
-    background-color: #ffff;
 }
 
 #product-section {
@@ -779,7 +854,7 @@ footer {
     span {
         margin-left: 4rem;
         font-size: 0.85rem;
-        color: #8A8FA0;
+        color: #0f0f0f;
         font-family: 'Playfair Display', serif;
         font-weight: 300;
     }
