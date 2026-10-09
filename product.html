@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Shop Merino Wool Cable Knit Sweater</title>
     </head>
     <header>
-        // COMP3612 Assign 1
-        <div id="nav-tems">
+        <div id="header-logo">
+            <span id="logo-slashes">//</span> COMP3612 Assign 1
+        </div>
         <nav>
-            <ul>
-            </div>
-              <div id="header-nav">
+            <ul id="header-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Shop</a></li>
+                <li><a href="product.html" class="active">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><span>Cart (0)</span></li>
-              </div>
             </ul>
+        </nav>
     </header>
     <body id="product-body">
         <div id="travel-link">
@@ -34,7 +36,7 @@
           </div>
           <div id="product-info">
             <h2 id="title">Merino Wool Cable Knit Sweater</h2>
-            <p>★★★★★ (4.8/5)・127 reviews</p>
+            <p id="main-review">★★★★★ (4.8/5)・127 reviews</p>
             <h1 id="price">$199.99</h1>
             <span id="product-desc">
               This luxuricus cable knit sweater is made from 100% menno wool for
@@ -75,11 +77,10 @@
         </div>
         <hr class="product-divider">
         <div id="info-selector">
-          <button id="selected">Description</button>
-          <button>Specifications</button>
-          <button>Care Instructions</button>
+          <span id="selected">Description</span>
+          <span>Specifications</span>
+          <span>Care Instructions</span>
         </div>
-        <hr class="product-divider">
         <div id="selectors">
         <h4 id="details">Product Details</h4>
         <p id="product-desc" style="max-width: 70ch;">
