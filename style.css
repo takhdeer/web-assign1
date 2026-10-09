@@ -467,6 +467,9 @@ footer {
         margin: 6px 0 12px;
         padding: 0;
     }
+    input[type="radio"] {
+        display: none;
+    }
 }
 
 #form > label {
@@ -475,7 +478,8 @@ footer {
     margin-bottom: 10px;
 }
 
-#size-btns button {
+#size-btns label {
+    display: inline-block;
     width: 33px;
     height: 33px;
     padding: 0;
@@ -483,27 +487,54 @@ footer {
     background-color: #F3F4F7;
     color: #343943;
     font-size: 0.7rem;
-}
-
-#size-btns button:hover {
     cursor: pointer;
+    text-align: center;
+    line-height: 33px;
 }
 
+#size-btns label:hover {
+    background-color: #e8e9ec;
+}
 
-#color-btns button {
+#size-btns input[type="radio"]:checked + label {
+    background-color: #171B26;
+    color: #ffffff;
+    border-color: #171B26;
+}
+
+#color-btns label {
+    display: inline-block;
     width: 20px;
     height: 20px;
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 50%;
-}
-
-#color-btns button:hover {
     cursor: pointer;
 }
 
-#cream {
+#color-btns label:hover {
+    opacity: 0.8;
+}
+
+#color-btns input[type="radio"]:checked + label {
+    border: 3px solid #171B26;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #171B26;
+}
+
+#color-btns label[for="color-cream"] {
     background-color: #eee8d9;
+}
+
+#color-btns label[for="color-black"] {
+    background-color: #343943;
+}
+
+#color-btns label[for="color-blue"] {
+    background-color: #14284a;
+}
+
+#color-btns label[for="color-red"] {
+    background-color: #c65c16;
 }
 
 #black {
